@@ -1,6 +1,7 @@
 About me
 
-My name is Mi-ann Wirjosentono. I am from Santo Boma,Wanica and. I am currently 17 years old and I will be starting my second year of VWO. 
+mimi made changes 
+My name is Mi-ann Wirjosentono. I am from Santo Boma,Wanica and. I am currently 17 years old and I will be starting my second year of VWO.ï¿½
 
 ![](https://lh6.googleusercontent.com/vvrq8colqale10AmB0lF_pn1QCbEpq_xd2HBcTv21lDSEjDLbY9a0zG3TA5iqwiwozoylSL1YpC-tDpvkahqYM1azyizSTi-IWdUYt5Lph30AGX52QtBs-m0YTVxTOFCpsoTjJN7GMrAjB6Pc2MJztw)
 
@@ -22,13 +23,13 @@ Component list:
 
 AAA 1.5 V battery
 
-9V battery 
+9V batteryï¿½
 
-resistors 
+resistorsï¿½
 
 diode
 
-led 
+ledï¿½
 
 breadboard
 
@@ -46,7 +47,7 @@ Electricity consists of current, potential energy and resistance.
 
 the law potential energy is equal to the current times the resistance.
 
- We were introduced to the follwing 3 types of circuits:
+ï¿½We were introduced to the follwing 3 types of circuits:
 
 1.  Simple circuit
 
@@ -64,7 +65,7 @@ Here I learned how to select three AAA 1.5V batteries on tinkercad and to couple
 
 Here I used a 9V battery and 3 led lights. I coupled the leds together by connecting the anode of one led to the cathode of the other. I then coupled the free anode to the positive pole via a resistor and the free cathode to the negative pole of the battery.
 
-3  parallel circuit
+3ï¿½ parallel circuit
 
 Here I once again used a 9V battery and 3 lights. However I coupled a diode with the positie pole to let the current flow in only one direction. From the diode I placed 3 separate cables each going to a cathode of a led. Then I placed another diode and coupled 3 seperate cables to for the cathode of each led. This diode I then coupled to the negative pole of the battery
 
@@ -76,7 +77,7 @@ I used an arduino uno R3 and a breadboard. This I coupled with a potential energ
 
 ![](https://lh6.googleusercontent.com/ixRebLrgx76dG2e-4HWwFvNUzS7BzyccIF9lHyQJYF9yKq2FFZIVqUz-kGNsNTFfHT932MgD-ISfV_F27N-B3mg6V8LxcZTDyZZcHwX1D2YGie6zms9963IU6M9nmAjoXT5Wi7470YGGFSVU3tbL_nk)
 
-Then I added a pushbutton. Terminal 1a and 2a were in same row as the led light but 7 coloms away from it  To connect this I connected the positive cable of bottom section to the top section's plus sign row aswell with the negative cable to the top section's minus sign row. In the row of the latter I placed a resistor horizontally in the same colomn as terminal 2b  and parallel to it as well as evenly long I placed a cable in the colomn of terminal 1b.
+Then I added a pushbutton. Terminal 1a and 2a were in same row as the led light but 7 coloms away from itï¿½ To connect this I connected the positive cable of bottom section to the top section's plus sign row aswell with the negative cable to the top section's minus sign row. In the row of the latter I placed a resistor horizontally in the same colomn as terminal 2bï¿½ and parallel to it as well as evenly long I placed a cable in the colomn of terminal 1b.
 
 Then I typed the code to make the light turn on and flicker.
 
@@ -88,9 +89,9 @@ int button= 3;
 
 void setup () {
 
-pinMode (led,  OUTPUT);
+pinMode (led,ï¿½ OUTPUT);
 
-pinMode(button.  INPUT);
+pinMode(button.ï¿½ INPUT);
 
 }
 
@@ -102,7 +103,7 @@ if (digitalRead(button)== High)
 
 digitalWrite (led, HIGH);
 
-delay (500) 
+delay (500)ï¿½
 
 digitalWrite (led, LOW);
 
@@ -110,9 +111,9 @@ delay (500)
 
 }
 
-else 
+elseï¿½
 
-{digitalWrite (led,  HIGH);
+{digitalWrite (led,ï¿½ HIGH);
 
 }
 
