@@ -1,4 +1,4 @@
-Day 1 Friday 10 february 2023
+##Day 1 Friday 10 february 2023
 
 Objective:
 ==========
@@ -126,7 +126,7 @@ github tracks history of commits
 
 commit: checkpoint or  change(s) made on local machine are saved and stored with  a certain point in time. It stores data on the  repository and indicates the time the changes were made.
 
-DAY 2 Friday 16 february 2023
+##DAY 2 Friday 16 february 2023
 
 objective:
 ==========
@@ -245,7 +245,7 @@ something like this wlll appear:
 
 ![](https://lh5.googleusercontent.com/BNoh1EQCeqY7ivUdrjerpoDDulrVgALp-yg5oBnr7865okAjQApxvuidpSiuYynkilXAdk5qaiEjO7kJCblUmPyc5xG4LvboaP6jP4mj1ks_ITiPLmxHY6MCERTmgzvVqfqsEVKrFZHQwh9oovwgtUI)on is lamp on 0ff is lamp off
 
-Day 3 Friday 24 february 2023
+##Day 3 Friday 24 february 2023
 
 objective:
 ==========
