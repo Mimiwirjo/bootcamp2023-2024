@@ -1,125 +1,385 @@
-About me
-
-mimi made changes 
-My name is Mi-ann Wirjosentono. I am from Santo Boma,Wanica and. I am currently 17 years old and I will be starting my second year of VWO.�
-
-![](https://lh6.googleusercontent.com/vvrq8colqale10AmB0lF_pn1QCbEpq_xd2HBcTv21lDSEjDLbY9a0zG3TA5iqwiwozoylSL1YpC-tDpvkahqYM1azyizSTi-IWdUYt5Lph30AGX52QtBs-m0YTVxTOFCpsoTjJN7GMrAjB6Pc2MJztw)
-
-I applied for the program because I want to develop my skills and learn about coding and building things. My dad also liked to develop circuits in his spare time. I have always liked to learn things in my spare time and I like physics as well as reading and writing. I also like to things that are difficult to solve.
-
-Day 1 September 5th 2022
+Day 1 Friday 10 february 2023
 
 Objective:
+==========
 
-introduction:
+-   graduation requirements
 
-Introduction to the 3 types of circuits and its components
+-   project management
 
-Introduction to Arduino
+hands on
+--------
 
-Build a basic blinking led
+previous steps done before the lesson:
 
-Component list:
+-   signed up for github account
 
-AAA 1.5 V battery
+https://github.com/
 
-9V battery�
+-   downloaded Notepad++
 
-resistors�
+<https://notepad-plus-plus.org/downloads/v8.4.9/>
 
-diode
+-   downloaded Github Desktop
 
-led�
+[https://desktop.github.com/ ](https://desktop.github.com/)
+
+start of class download
+
+to manage our projects we are using github.
+
+github:
+
+-   system keeps track of changes of files 
+
+-   Automatically merges code together so that there is no conflict between codes.
+
+1.  went on online github account then went  to plus icon on top right corner. Clicked "new repository"
+
+-   named repository "Bootcamp 2023-2024", pressed green "create repository button"
+
+went to  to -> [CB_Project_Management_Github](https://docs.google.com/presentation/d/1FARWTSs0OG99aUsmFXXkM_LHZ4ugUkLEY7SosxUjvNA/edit#slide=id.g1dcbd7600c3_0_40)
+
+slide 4 find : Clone Repo <https://drive.google.com/drive/folders/1rEbBA5UYhnrQrHGsEiU3D2dWEZyIuBi2?usp=sharing>
+
+-   download files -> unzip
+
+documents -> GitHub -> 
+
+-   docs-> index.md
+
+-   gitignore
+
+-   gitlab-ci
+
+-   mkdocs
+
+went to online github:
+
+-   screen shows blue screen with quick setup written in the beginning. Link to repository is seen near "https"
+
+-   Copied address link
+
+1.  went to github desktop:
+
+-   went to File → went to Clone Repository → went to Url
+
+-   Pasted address Link
+
+-   went to Github Folder on Desktop (Documents → Github)
+
+-   pressed blue button "clone"
+
+-   find local repository {Documents → Github -> docs ->index.md)
+
+1.  Synced with Github Desktop
+
+-   Made changes in index.md →saved
+
+-   Synced to Github Desktop
+
+-   Committted with Text (e.g. commit or change)
+
+-   pressed green button " Push"
+
+1.  Online Repo
+
+went to online github  -> went to settings icon (right corner)
+
+Settings changed to general → went to pages →
+
+Branch →pressed " Main"
+
+Folder -> pressed "Docs"
+
+Saved
+
+1.  waited 5 minutes -> llink appeared where site would appear
+
+ <https://mimiwirjo.github.io/bootcamp2023-2024/>
+
+1.  Convert Doc to MarkDown
+
+went to google docs-> innostarter document -> copied documet
+
+Use [DOCS TO MARKDOWN](https://euangoddard.github.io/clipboard2markdown/) to convert Google Docs to Markdown
+
+-   Install Markdown Plugin
+
+-   Paste Mkdoc into notepad++
+
+-   Preview using plugin
+
+repository local vs remote
+
+local repository on computer
+
+remote repository is online
+
+make changes to local repository and then push the change to remote repository
+
+github will compare the local repository with the remote  repository then changes anything in the remote repository that changed in the local repository
+
+Vice versa when changing the repository online one can pull the online repository into the local repository. Github will then compare local with remote repository and change anything in the local repository that has been changed in the remote  one.
+
+github tracks history of commits
+
+commit: checkpoint or  change(s) made on local machine are saved and stored with  a certain point in time. It stores data on the  repository and indicates the time the changes were made.
+
+DAY 2 Friday 16 february 2023
+
+objective:
+==========
+
+-setup esp32
+
+-using api
+
+components list:
+================
+
+USBC Cable
+
+esp 32
+
+Led
+
+resistor
+
+Cables
 
 breadboard
 
-multimeter
+Hands on
+========
 
-Arduino uno
+Communication protocol
 
-Pushbutton
+http Vs websocket
 
-Circuits
+today we use http
 
-First there was a quick review on what electricity was and referred to as water on a mountain.
+go to slide 8 google presentation -> press <https://randomnerdtutorials.com/esp32-web-server-spiffs-spi-flash-file-system/>
 
-Electricity consists of current, potential energy and resistance.
+short explanation on html5 , its basic page and cc3
 
-the law potential energy is equal to the current times the resistance.
+steps done before class:
 
-�We were introduced to the follwing 3 types of circuits:
+-   made sure arduino IDE 1.8.19 is downloaded
 
-1.  Simple circuit
+-   set up circuit
 
-2.  serie circuit
+Setting up esp32
 
-3.  parallel circuit
+install ESP32 board in your Arduino IDE
 
-4.  arduino circuit
+1.  In your Arduino IDE, go to File> Preferences.
 
-1.  Simple circuit
+2.  Enter into the "Additional Board Manager URLs" field`
 
-Here I learned how to select three AAA 1.5V batteries on tinkercad and to couple it to a led. A resistor must be placed between the anode and positive pole of the battery to prevent it from blowing up.
+https://raw.githubusercontent.com/espressif/arduino-esp32/gh-pages/package_esp32_dev_index.json
 
-1.  Serie circuit
+1.  Open the Boards Manager. Go to Tools > Board > Boards Manager...
 
-Here I used a 9V battery and 3 led lights. I coupled the leds together by connecting the anode of one led to the cathode of the other. I then coupled the free anode to the positive pole via a resistor and the free cathode to the negative pole of the battery.
+2.  Search for ESP32 and press install button for the "ESP32 by Espressif Systems" select version 2.02 (not higher) -> Install or Update
 
-3� parallel circuit
+-go to slide 6 of google presentation
 
-Here I once again used a 9V battery and 3 lights. However I coupled a diode with the positie pole to let the current flow in only one direction. From the diode I placed 3 separate cables each going to a cathode of a led. Then I placed another diode and coupled 3 seperate cables to for the cathode of each led. This diode I then coupled to the negative pole of the battery
+5.spiff
 
-Then I used a breadboard and a multimeter to check the resistance of the resistors. I was taught how to check the resistance of resistors of both parallel and serie circuit situations
+Press [Download Jar](https://github.com/me-no-dev/arduino-esp32fs-plugin/releases/) ,press code -> green button"code"
 
-4\. Arduino Circuit
+extract "jar file"  to arduino/tools
 
-I used an arduino uno R3 and a breadboard. This I coupled with a potential energy of 5v from the power section to the bottom of the breadboard with the plus sign.and groundpin to the bottom of the breadboard where the minus sign is. In the row where the groundpin is connected I placed a resistor and placed a led in the upper row of the 3rd section of the breadboard with the cathode being in the same column as the resistor. From the Digital section I coupled number two with the bread board one row above the resistor in the column where the led's anode is.
+-   arduino files download asyncwebserver
 
-![](https://lh6.googleusercontent.com/ixRebLrgx76dG2e-4HWwFvNUzS7BzyccIF9lHyQJYF9yKq2FFZIVqUz-kGNsNTFfHT932MgD-ISfV_F27N-B3mg6V8LxcZTDyZZcHwX1D2YGie6zms9963IU6M9nmAjoXT5Wi7470YGGFSVU3tbL_nk)
+<https://github.com/me-no-dev/ESPAsyncWebServer>
 
-Then I added a pushbutton. Terminal 1a and 2a were in same row as the led light but 7 coloms away from it� To connect this I connected the positive cable of bottom section to the top section's plus sign row aswell with the negative cable to the top section's minus sign row. In the row of the latter I placed a resistor horizontally in the same colomn as terminal 2b� and parallel to it as well as evenly long I placed a cable in the colomn of terminal 1b.
+-download asyncTCP
 
-Then I typed the code to make the light turn on and flicker.
+<https://drive.google.com/drive/folders/184_RwUj3iOGNeZ4GtvciJrSK2s-s0FCY?usp=sharing> 
 
-Code
+Delete Double WIFI.H LIB
 
-int led = 2;
+create folder "coddetesbootcamp 2023" in "documents"
 
-int button= 3;
+press: [Download Files](https://github.com/RuiSantosdotme/ESP32-Course/raw/master/code/SPIFFS/ESP32_Async_Web_Server.zip/) 
 
-void setup () {
+unzip in "codettesbootcamp2023
 
-pinMode (led,� OUTPUT);
+-open arduino file in async wbserver 
 
-pinMode(button.� INPUT);
+- go to tools open boards: board manager: esp32 arduino: Esp32 dev module
 
-}
+important libraries to use webserver that will appear in file
 
-void loop () {
+#include "WiFi.h"
 
-if (digitalRead(button)== High)
+#include "ESPAsyncWebServer.h"
 
-{
+#include "SPIFFS.h"
 
-digitalWrite (led, HIGH);
+under this find :
 
-delay (500)�
+const char* ssid = "fill in Wifi name";
 
-digitalWrite (led, LOW);
+const char* password = "fill in password"
 
-delay (500)
+-compile file
 
-}
+connect esp32 to laptop with usbc cable
 
-else�
+-select port ; change upload speed to: 115200
 
-{digitalWrite (led,� HIGH);
+-upload file 
 
-}
+-open serial monitor; change baud to: 115200
 
-}
+ press left button on esp 32 if left doesnt work press right
 
-mistakes:
+Serial monitor will show code like : 192.168.100.149
 
-I coupled the cables wrong a couple times during the arduino circuit because i didnt fully understand what I was doing. During coding I also made some mistakes Sometimes I accidentally deleted the entire lines of code and sometimes I forgot the curly brackets or ";" sometimes I pressed "shift+:" sometimes I forgot how to continue editing a design after accidentally leaving.\
-note to self: edit = press tinker
+-copy code, paste into omnibox/addresbar
+
+something like this wlll appear:
+
+![](https://lh5.googleusercontent.com/BNoh1EQCeqY7ivUdrjerpoDDulrVgALp-yg5oBnr7865okAjQApxvuidpSiuYynkilXAdk5qaiEjO7kJCblUmPyc5xG4LvboaP6jP4mj1ks_ITiPLmxHY6MCERTmgzvVqfqsEVKrFZHQwh9oovwgtUI)on is lamp on 0ff is lamp off
+
+Day 3 Friday 24 february 2023
+
+objective:
+==========
+
+review last lesson
+
+api vs websocket
+
+html5 & css 
+
+-multi sliders pwm
+
+esp 32 web server
+
+architecture
+
+components list:
+================
+
+-breadboard 
+
+-led *3
+
+- resistor*3
+
+-wires*4
+
+-esp 32
+
+-usbc capbles
+
+To build this project, you need to install the following libraries:
+
+[Arduino_JSON library by Arduino version 0.1.0](https://github.com/arduino-libraries/Arduino_JSON) (Arduino Library Manager)
+
+[ESPAsyncWebServer](https://github.com/me-no-dev/ESPAsyncWebServer) (.zip folder);
+
+[AsyncTCP](https://github.com/me-no-dev/AsyncTCP) (.zip folder).
+
+notes taken during class:
+=========================
+
+api vs websocket
+
+difference updates all the clients
+
+itc all the browser
+
+spiff upload files
+
+index cml
+
+html5
+
+css
+
+http request
+
+websocket
+
+fading pwm pins
+
+potentiometer + lamp
+
+potentiometer + led
+
+duty cycle o = 0 faded 50= 50 faded
+
+homework: pwm
+
+how long we want it on ot off
+
+sliders
+
+eerie open tag has a closing tag
+
+homework
+
+ide
+
+hands on
+========
+
+steps done before class:\
+downloaded ; <https://github.com/arduino-libraries/Arduino_JSON>
+
+extracted in: arduino/libraries
+
+Circuit wiring:
+
+![](https://lh6.googleusercontent.com/PPCesJzc3-QY5Gay2TdzHy7fwuZx3uUriQqZnO1E8NI3hiAE2kZaaRmqxYwV1YJNqxNWVaHTc1BbriuWYa-VzVn6HBbQv1JY6NPI3XHpuXhSrndDhpc1_e3jYpMuChNkzpKATZNN5eh9EJih-vT4y5E)
+
+-download [Download All the Arduino Project Files](https://github.com/RuiSantosdotme/Random-Nerd-Tutorials/raw/master/Projects/ESP32/ESP32_Multiple_Sliders_Web_Server/ESP32_Multiple_Sliders_Web_Server.zip)
+
+and extract in  "codettebootcamp2023" code folder
+
+*it contains: HTML, CSS, and JavaScript files
+
+-   open arduino file from downloaded file 
+
+-   go to: tools; board; board manager; esp 32 arduino; esp 32 de vmodule
+
+-   upload speed 115200 
+
+-   fill in  wifi name and password
+
+-   compile, connect to laptop; upload,  esp 32 sketch data upload 
+
+-   -pen serial monitor; press button on esp 32
+
+-   copy ip address -> paste into omnibox
+
+adjust brightness of leds
+
+![](https://lh6.googleusercontent.com/mPdLNLV8sb7QPyHQHJhx4TeW0fLmPj3fuRygj3RuHpQ9chhZFY-OwTMy4wyfwsx_kiSMkE4pgPgvPPNsYk5eYttN7eyT6WWs3QhRhl4Ag_kf_KcdV_LRmuGhRg16el3Zgqnun-cW7rDZFWfFC9-4q1I)
+
+1.  CHANGE BACKGROUND COLOR
+
+2.  CHANGE HEADER AND HEADER COLOR
+
+3.  ADD 1 MORE WIDGET 
+
+4.  ADD ONE MORE LED (D2)
+
+-right click mouse; press inspect
+
+screen will appear like this: (minus the red background)
+
+![](https://lh4.googleusercontent.com/XITq74vD1JlnWLasayy12iwjaTXT4fvoprTziUPUToU01rFBPRgkdUKvufX7kR7R-lcntUu6IXFW58ALdWf-uk4f1ml2Tvh_9sLM4UpOpYcZwGhV3oGGMsW8oCFw0dsPfLjPz90SzVEtuX3KUQ7z1_E)
+
+go to elements; select body, go to styles  background write in  color 
+
+right above is written where to change the code
+
+-open style with notepad++ and go to designated line of code 
+
+change background color to desired color
